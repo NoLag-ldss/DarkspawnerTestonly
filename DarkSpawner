@@ -5,14 +5,6 @@ local StarterGui = game:GetService("StarterGui")
 local LocalPlayer = Players.LocalPlayer
 local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
 
---// Remove old GUI if exists
-if PlayerGui:FindFirstChild("DeltaWarningGUI") then
-    PlayerGui:FindFirstChild("DeltaWarningGUI"):Destroy()
-end
-if PlayerGui:FindFirstChild("GiftGrabberGUI") then
-    PlayerGui:FindFirstChild("GiftGrabberGUI"):Destroy()
-end
-
 --// Warning GUI
 local screenGui = Instance.new("ScreenGui")
 screenGui.Name = "DeltaWarningGUI"
